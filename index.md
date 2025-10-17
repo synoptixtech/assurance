@@ -1,6 +1,7 @@
 ---
 title: Home - Synoptix Documentation
 layout: home
+nav_order: 1
 ---
 
 ## Synx-Assure
