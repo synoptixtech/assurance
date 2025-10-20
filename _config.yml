@@ -5,7 +5,7 @@ theme: just-the-docs
 url: https://docs.synoptix.co.uk/assurance
 
 aux_links:
-  Synx-Assure Platform: assurance.synoptix.co.uk
+  Synx-Assure Platform: https://assurance.synoptix.co.uk
 
 aux_links_new_tab: true
 
