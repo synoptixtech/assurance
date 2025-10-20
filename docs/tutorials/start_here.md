@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Start Here
+title: Tutorial - Start Here
 nav_order: 1
 parent: Tutorials
 layout: default
