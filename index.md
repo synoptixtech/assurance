@@ -4,7 +4,9 @@ layout: home
 nav_order: 1
 ---
 
-## Synx-Assure
+# Synx-Assure
 
-This site contains the public facing documentation for the Synx-Assure project.
+This site contains the public facing documentation for the Synx-Assure project and platform.
+
+## Structure
 

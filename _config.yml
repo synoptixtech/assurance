@@ -7,4 +7,7 @@ url: https://docs.synoptix.co.uk/assurance
 aux_links:
   Synx-Assure Platform: assurance.synoptix.co.uk
 
-#logo: "/assets/images/just-the-docs.png"
+aux_links_new_tab: true
+
+logo: "/assets/site_assets/images/SynoptixBlue_01.png"
+favicon_ico: "/assets/site_assets/images/SBlue_01.png"
