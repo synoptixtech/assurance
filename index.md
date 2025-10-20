@@ -10,3 +10,4 @@ This site contains the public facing documentation for the Synx-Assure project a
 
 ## Structure
 
+There are 3 main sections
