@@ -1,8 +1,10 @@
-title: Synoptix Documentation
-description: Synoptix Platform Documentation
+title: Synoptix Docs
+description: Documentation for Synoptix's platforms and products
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://docs.synoptix.co.uk/assurance
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  Synx-Assure Platform: assurance.synoptix.co.uk
+
+#logo: "/assets/images/just-the-docs.png"
