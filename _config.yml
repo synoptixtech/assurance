@@ -1,5 +1,5 @@
-title: Synoptix Docs
-description: Documentation for Synoptix's platforms and products
+title: Synx-Assure Docs
+description: Documentation for Synoptix's Synx-Assure Platform
 theme: just-the-docs
 
 url: https://docs.synoptix.co.uk/assurance
@@ -8,6 +8,12 @@ aux_links:
   Synx-Assure Platform: https://assurance.synoptix.co.uk
 
 aux_links_new_tab: true
+
+nav_external_links:
+- title: Synx Docs Home
+  url: https://docs.synoptix.co.uk/
+  hide_icon: false # set to true to hide the external link icon - defaults to false
+  opens_in_new_tab: false # set to true to open this link in a new tab - defaults to false
 
 logo: "/assets/site_assets/images/SynoptixBlue_01.png"
 favicon_ico: "/assets/site_assets/images/SBlue_01.png"
