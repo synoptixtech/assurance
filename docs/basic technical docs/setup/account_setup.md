@@ -9,7 +9,7 @@ layout: default
 
 Under the "Users" tab, select "+ Add User" in the top right. 
 
-Provide details for the user, and select their role. Details on available roles can be found in [Types of Users](types_of_users.md).
+Provide details for the user, and select their role. Details on available roles can be found in [Types of Users](types_of_users.html).
 
 ![A screenshot of the user page](..\..\..\assets\platform_screenshots\add_user.png)
 
