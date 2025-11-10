@@ -17,3 +17,20 @@ nav_external_links:
 
 logo: "/assets/site_assets/images/SynoptixBlue_01.png"
 favicon_ico: "/assets/site_assets/images/SBlue_01.png"
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
