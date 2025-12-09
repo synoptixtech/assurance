@@ -59,3 +59,5 @@ Once you click "Add System", you can complete the dialog box.
 | System Owner Phone | Contact details for the system owner.                                                               | No         |
 
 ![Add System Dialog](..\..\..\assets\platform_screenshots\add_system_dialog.png)
+
+[Proceed to set up Projects and Models](https://docs.synoptix.co.uk/assurance/docs/basic%20technical%20docs/setup/project_creation.html){: .btn .btn-purple }
