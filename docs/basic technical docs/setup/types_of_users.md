@@ -29,5 +29,5 @@ Role permissions are summarised here. Actual implemented permissions are slightl
 | Client Modeller   |       | View    | View/Edit         | View      | View      |           |                             |
 | Approver          |       | View    | View/Approve      | View      | View      |           |                             |
 | Senior Leader     |       | View    | View              | View      | View      |           |                             |
-| Super Admin       | View  | View    | View/Edit/Approve |           |           | View/Edit |                             |
+| Super Admin       | View  | View    | View/Edit/Approve |           |           | View/Edit | View/Edit                   |
 | Synoptix Modeller |       | View    | View/Edit         |           |           | View      |                             |

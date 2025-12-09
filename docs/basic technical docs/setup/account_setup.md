@@ -9,13 +9,13 @@ layout: default
 
 Under the "Users" tab, select "+ Add User" in the top right.
 
-Provide details for the user, and select their role. Details on available roles can be found in [Types of Users](types_of_users.html).
+Provide details for the user, and select their role.
 
 | Property      | Description                               | Mandatory? |
 |---------------|-------------------------------------------|------------|
-| First Name    |                                           | Yes        |
-| Last Name     |                                           | Yes        |
-| Email Address |                                           | Yes        |
+| First Name    | User Details             W                 | Yes        |
+| Last Name     | User Details                              | Yes        |
+| Email Address | User Details                              | Yes        |
 | Role          | The user's role. More details in Details on available roles can be found in [Types of Users](types_of_users.html)| Yes        |
 | Organisation  | Mandatory for all except Synoptix roles.  | Yes        |
 
