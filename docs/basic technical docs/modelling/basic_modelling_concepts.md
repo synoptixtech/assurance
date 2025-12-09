@@ -1,5 +1,5 @@
 ---
-title: Core Concepts
+title: Basic Modelling Concepts
 nav_order: 1
 parent: Basics of Modelling
 layout: default
@@ -15,7 +15,7 @@ When you directly click on the middle of an element, you'll see a side bar appea
 ![Blank Element Sidebar - for an initial claim](..\..\..\assets\platform_screenshots\editing_sidebar.png)
 
 You can view the required element attributes and options here:
-[Element Attribute Specification](https://just-the-docs.com){: .btn .btn-blue }
+[Element Attribute Specification](https://docs.synoptix.co.uk/assurance/docs/advanced%20technical%20docs/platform_data_model/element_attributes.html){: .btn .btn-blue }
 
 # Navigating the Interface and Layout
 
