@@ -13,7 +13,7 @@ Provide details for the user, and select their role.
 
 | Property      | Description                               | Mandatory? |
 |---------------|-------------------------------------------|------------|
-| First Name    | User Details             W                 | Yes        |
+| First Name    | User Details                              | Yes        |
 | Last Name     | User Details                              | Yes        |
 | Email Address | User Details                              | Yes        |
 | Role          | The user's role. More details in Details on available roles can be found in [Types of Users](types_of_users.html)| Yes        |
