@@ -7,8 +7,7 @@ layout: default
 
 # Core Language Ontology
 
-> **Scope:** A CAE‑style assurance case with an explicit **Risk** extension. The ontology specifies *what* elements exist and *how* they connect to build an assurance case. It is agnostic to metrics, attributes, and assessment/roll‑up semantics.
-
+This page defines the core elements and connections that can be used in the Synx-Assure modelling tool.
 
 ## 1) Claim
 
