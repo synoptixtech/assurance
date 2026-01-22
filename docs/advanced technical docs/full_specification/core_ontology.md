@@ -60,14 +60,16 @@ layout: default
 ***
 
 ## 3) Evidence
-
-**Definition:** Concrete artefacts that substantiate Arguments and/or Mitigations (e.g., test reports, analyses).
+{: .note-title }
+> Definition: Evidence
+>
+> Concrete artefacts that substantiate Arguments and/or Mitigations (e.g., test reports, analyses).
 
 **Link rules & cardinalities**
 
 *   **Incoming**
-    *   `Argument —is_supported_by→ Evidence (0..N)`
-    *   `Mitigation —is_evidenced_by→ Evidence (0..N)`
+    *   `Argument —(is_supported_by)→ Evidence (0..N)`
+    *   `Mitigation —(is_evidenced_by)→ Evidence (0..N)`
 *   **Outgoing**
     *   *(None; Evidence does not point to Claims, Risks, or Contexts directly.)*
 
@@ -78,13 +80,15 @@ layout: default
 ***
 
 ## 4) Context
-
-**Definition:** Scope/boundary information that clarifies a Claim (conditions, definitions, variants, e.g., multiple ODDs).
+{: .note-title }
+> Definition: Context
+>
+> Scope/boundary information that clarifies a Claim (conditions, definitions, variants, e.g., multiple ODDs).
 
 **Link rules & cardinalities**
 
 *   **Incoming**
-    *   `Claim —has_context→ Context (0..N)`
+    *   `Claim —(has_context)→ Context (0..N)`
 *   **Outgoing**
     *   *(None; Context does not link further.)*
 
@@ -96,13 +100,15 @@ layout: default
 ***
 
 ## 5) Justification
-
-**Definition:** The rationale for an Argument’s structure—why its decomposition and selected evidence are appropriate.
+{: .note-title }
+> Definition: Justification
+>
+> The rationale for an Argument’s structure — why its decomposition and selected evidence are appropriate.
 
 **Link rules & cardinalities**
 
 *   **Incoming**
-    *   `Argument —has_justification→ Justification (exactly 1)`
+    *   `Argument —(has_justification)→ Justification (exactly 1)`
 *   **Outgoing**
     *   *(None; Justification does not link further.)*
 
@@ -113,13 +119,16 @@ layout: default
 ***
 
 ## 6) Assumption
+{: .note-title }
+> Definition: Assumption
+>
+> A constraint accepted without proof within an Argument’s reasoning (e.g., simplifying parameter, validity bound).
 
-**Definition:** A constraint accepted without proof within an Argument’s reasoning (e.g., simplifying parameter, validity bound).
 
 **Link rules & cardinalities**
 
 *   **Incoming**
-    *   `Argument —has_assumption→ Assumption (0..N)`
+    *   `Argument —(has_assumption)→ Assumption (0..N)`
 *   **Outgoing**
     *   *(None; Assumptions do not carry Evidence directly.)*
 
@@ -130,36 +139,40 @@ layout: default
 
 ***
 
-## 7) Risk (distinct node)
-
-**Definition:** A threat to the credibility or validity of a Claim or Argument.
+## 7) Risk
+{: .note-title }
+> Definition: Risk
+>
+> A threat to the credibility or validity of a Claim or Argument.
 
 **Link rules & cardinalities**
 
 *   **Incoming (exclusive)**
-    *   `Claim —has_risk→ Risk (0..N)` **or** `Argument —has_risk→ Risk (0..N)`  
-        *(Each Risk attaches to **exactly one** parent, either a Claim **or** an Argument.)*
+    *   `Claim —(has_risk)→ Risk (0..N)` **or** `Argument —(has_risk)→ Risk (0..N)`  
+        *(Each Risk attaches to exactly one parent, either a Claim or an Argument.)*
 *   **Outgoing (owned components)**
-    *   `Risk —has_origin→ Origin (exactly 1)`
-    *   `Risk —has_hazard→ Hazard (exactly 1)`
-    *   `Risk —has_impact→ Impact (exactly 1)`
-    *   `Risk —has_mitigation→ Mitigation (0..N)`
+    *   `Risk —(has_origin)→ Origin (exactly 1)`
+    *   `Risk —(has_hazard)→ Hazard (exactly 1)`
+    *   `Risk —(has_impact)→ Impact (exactly 1)`
+    *   `Risk —(has_mitigation)→ Mitigation (0..N)`
 
 **Special constraints**
 
-*   Risks do **not** attach to Evidence.
-*   A node (Claim or Argument) may have **multiple** Risks.
-
+*   Risks do not attach to Evidence.
+*   A node (Claim or Argument) may have multiple Risks.
+*   Risks are separate nodes that must have an Origin, Hazard, Impact, and Mitigation(s).
 ***
 
 ## 8) Origin
-
-**Definition:** The source or causal locus of a Risk (e.g., data, model, operation).
+{: .note-title }
+> Definition: Origin
+>
+> The source or causal locus of a Risk (e.g., data, model, operation).
 
 **Link rules & cardinalities**
 
 *   **Incoming**
-    *   `Risk —has_origin→ Origin (exactly 1)`
+    *   `Risk —(has_origin)→ Origin (exactly 1)`
 *   **Outgoing**
     *   *(None.)*
 
@@ -170,13 +183,15 @@ layout: default
 ***
 
 ## 9) Hazard
-
-**Definition:** The hazardous condition/event within a Risk.
+{: .note-title }
+> Definition: Hazard
+>
+> The hazardous condition/event within a Risk.
 
 **Link rules & cardinalities**
 
 *   **Incoming**
-    *   `Risk —has_hazard→ Hazard (exactly 1)`
+    *   `Risk —(has_hazard)→ Hazard (exactly 1)`
 *   **Outgoing**
     *   *(None.)*
 
@@ -187,13 +202,15 @@ layout: default
 ***
 
 ## 10) Impact
-
-**Definition:** The consequence if the Hazard manifests.
+{: .note-title }
+> Definition: Impact
+>
+> The consequence if the Hazard manifests.
 
 **Link rules & cardinalities**
 
 *   **Incoming**
-    *   `Risk —has_impact→ Impact (exactly 1)`
+    *   `Risk —(has_impact)→ Impact (exactly 1)`
 *   **Outgoing**
     *   *(None.)*
 
@@ -204,31 +221,35 @@ layout: default
 ***
 
 ## 11) Mitigation
-
-**Definition:** A treatment/control intended to reduce a Risk.
+{: .note-title }
+> Definition: Mitigation
+>
+> A treatment/control intended to reduce a Risk.
 
 **Link rules & cardinalities**
 
 *   **Incoming**
-    *   `Risk —has_mitigation→ Mitigation (0..N)`
+    *   `Risk —(has_mitigation)→ Mitigation (0..N)`
 *   **Outgoing**
-    *   `Mitigation —is_evidenced_by→ Evidence (0..N)` *(recommended but not mandatory)*
+    *   `Mitigation —(is_evidenced_by)→ Evidence (0..N)` *(recommended but not mandatory)*
 
 **Special constraints**
 
-*   Evidence for a Mitigation is **optional** in the ontology (policy may require it).
+*   Evidence for a Mitigation is **optional** in the ontology.
 
 ***
 
 ## 12) Self‑evident flag (Claim modifier)
-
-**Definition:** Marks a Claim as self‑evident/true for the purposes of the case.
+{: .note-title }
+> Definition: Self-evident Flag
+>
+> Marks a Claim as self‑evident/true for the purposes of the case.
 
 **Effect on links**
 
-*   **Forbidden:** `Claim —is_supported_by→ Argument`
-*   **Allowed:** `Claim —has_context→ Context (0..N)`
-*   **Allowed:** `Claim —has_risk→ Risk (0..N)` *(unless an organisational policy forbids risks on terminated branches; the ontology allows them.)*
+*   **Forbidden:** `Claim —(is_supported_by)→ Argument`
+*   **Allowed:** `Claim —(has_context)→ Context (0..N)`
+*   **Allowed:** `Claim —(has_risk)→ Risk (0..N)` 
 
 ***
 
