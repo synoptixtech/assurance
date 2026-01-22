@@ -60,6 +60,7 @@ layout: default
 ***
 
 ## 3) Evidence
+
 {: .note-title }
 > Definition: Evidence
 >
@@ -80,6 +81,7 @@ layout: default
 ***
 
 ## 4) Context
+
 {: .note-title }
 > Definition: Context
 >
@@ -100,6 +102,7 @@ layout: default
 ***
 
 ## 5) Justification
+
 {: .note-title }
 > Definition: Justification
 >
@@ -119,6 +122,7 @@ layout: default
 ***
 
 ## 6) Assumption
+
 {: .note-title }
 > Definition: Assumption
 >
@@ -140,6 +144,7 @@ layout: default
 ***
 
 ## 7) Risk
+
 {: .note-title }
 > Definition: Risk
 >
@@ -164,6 +169,7 @@ layout: default
 ***
 
 ## 8) Origin
+
 {: .note-title }
 > Definition: Origin
 >
@@ -183,6 +189,7 @@ layout: default
 ***
 
 ## 9) Hazard
+
 {: .note-title }
 > Definition: Hazard
 >
@@ -202,6 +209,7 @@ layout: default
 ***
 
 ## 10) Impact
+
 {: .note-title }
 > Definition: Impact
 >
@@ -221,6 +229,7 @@ layout: default
 ***
 
 ## 11) Mitigation
+
 {: .note-title }
 > Definition: Mitigation
 >
@@ -240,6 +249,7 @@ layout: default
 ***
 
 ## 12) Self‑evident flag (Claim modifier)
+
 {: .note-title }
 > Definition: Self-evident Flag
 >
@@ -250,13 +260,3 @@ layout: default
 *   **Forbidden:** `Claim —(is_supported_by)→ Argument`
 *   **Allowed:** `Claim —(has_context)→ Context (0..N)`
 *   **Allowed:** `Claim —(has_risk)→ Risk (0..N)` 
-
-***
-
-## 13) Immediate‑Support Invariant (global)
-
-*   **For every non‑self‑evident Claim:**
-    *   There exists **exactly one** `Argument` such that `Claim —is_supported_by→ Argument`.
-    *   That `Argument` has **exactly one** parent `Claim`.
-*   **For hierarchical decomposition:**
-    *   Each `Argument` may introduce **0..N** sub‑Claims; each sub‑Claim then follows the same invariant (unique supporting Argument unless self‑evident).
