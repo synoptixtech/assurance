@@ -9,7 +9,7 @@ layout: default
 
 In order to create a new element, you need to right-click on an existing element. This will give options for uplinked or downlinked artefacts, depending on the allowable connections that can be made from the specific element. Typically, you will almost always create downlinked artefacts, as you are building out a "tree" style argument hierarchy. 
 
-![From right clicking on an existing element, you can create uplinked or downlinked elements](..\..\..\assets\platform_screenshots\add_downlinked_elements.png)
+![From right clicking on an existing element, you can create uplinked or downlinked elements](..\..\..\assets\platform_screenshots\add_downlinked_element.png)
 
 Newly created elements will be marked with a red banner with exclamation, indicating that mandatory fields need to be filled in. The model can't be saved until these mandatory fields are filled out.
 
@@ -27,6 +27,7 @@ You can view the required element attributes and options here:
 
 # Navigating the Interface and Layout
 
+The modelling canvas screen can be viewed below. The table below provides description for the labels/annotations on this screen.
 ![Annotated Diagram of Modelling Screen](..\..\..\assets\platform_screenshots\modelling_screen_layout.png)
 
 | Label    | Description                                                                                         |
@@ -43,3 +44,5 @@ You can view the required element attributes and options here:
 | 10       | A "minimap" style description of the current screen.                                                |
 | 11       | Controls to zoom and control size of the modelling canvas. Auto-zoom feature to zoom to fill all objects on the screen.                                                                                                          |
 | 12       | Useful links to privacy statement, contact details, FAQ, and this documentation set.                |
+
+[Proceed to understand the core concepts of an assurance case model](https://docs.synoptix.co.uk/assurance/docs/basic%20technical%20docs/modelling/core_concepts.html){: .btn .btn-purple }
