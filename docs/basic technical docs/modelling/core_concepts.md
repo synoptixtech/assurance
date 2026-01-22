@@ -51,7 +51,7 @@ Alongside the main elements, there are a number of other allowable elements.
 
 ## Links to Industry Standards
 
-The Aegis framework described here is a variation of the "CAE approach" - more information can be found on https://claimsargumentsevidence.org/. The key variation is the addition of risk elements, which not only allows an AI assurance case to link closely with wider organisational risk management approaches, but also helps with representing "softer" aspects of an AI-specific assurance argument - like ethics, fairness, or legality. 
+The Aegis framework described here is a variation of the "CAE approach" - more information can be found on [here](https://claimsargumentsevidence.org/). The key variation is the addition of risk elements, which not only allows an AI assurance case to link closely with wider organisational risk management approaches, but also helps with representing "softer" aspects of an AI-specific assurance argument - like ethics, fairness, or legality. 
 
 [Continue to understand how to manage evidence within the model](https://docs.synoptix.co.uk/assurance/docs/basic%20technical%20docs/modelling/managing_evidence.html){: .btn .btn-purple }
 
