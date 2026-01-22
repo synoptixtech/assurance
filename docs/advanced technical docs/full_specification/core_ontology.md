@@ -20,12 +20,12 @@ layout: default
 **Link rules & cardinalities**
 
 *   **Outgoing**
-    *   `Claim —is_supported_by→ Argument (exactly 1)`  
+    *   `Claim —(is_supported_by)→ Argument (exactly 1)`  
         *(Suppressed if the Claim is marked self‑evident; see §12.)*
-    *   `Claim —has_context→ Context (0..N)`
-    *   `Claim —has_risk→ Risk (0..N)`
+    *   `Claim —(has_context)→ Context (0..N)`
+    *   `Claim —(has_risk)→ Risk (0..N)`
 *   **Incoming**
-    *   `Argument —introduces_subclaim→ Claim (0..N)` *(i.e., this Claim may be a sub‑claim of a parent Argument).*
+    *   `Argument —(introduces_subclaim)→ Claim (0..N)` *(i.e., this Claim may be a sub‑claim of a parent Argument).*
 
 **Special constraints**
 
@@ -36,23 +36,26 @@ layout: default
 
 ## 2) Argument
 
-**Definition:** The reasoning step that warrants a (parent) Claim by invoking sub‑claims and/or evidence.
+{: .note-title }
+> Definition: Argument
+>
+> The reasoning step that warrants a (parent) Claim by invoking sub‑claims and/or evidence.
 
 **Link rules & cardinalities**
 
 *   **Outgoing**
-    *   `Argument —introduces_subclaim→ Claim (0..N)` *(hierarchical decomposition).*
-    *   `Argument —is_supported_by→ Evidence (0..N)`
-    *   `Argument —has_assumption→ Assumption (0..N)`
-    *   `Argument —has_justification→ Justification (exactly 1)`
-    *   `Argument —has_risk→ Risk (0..N)`
+    *   `Argument —(introduces_subclaim)→ Claim (0..N)` *(hierarchical decomposition).*
+    *   `Argument —(is_supported_by)→ Evidence (0..N)`
+    *   `Argument —(has_assumption)→ Assumption (0..N)`
+    *   `Argument —(has_justification)→ Justification (exactly 1)`
+    *   `Argument —(has_risk)→ Risk (0..N)`
 *   **Incoming**
-    *   `Claim —is_supported_by→ Argument (exactly 1)` *(the parent Claim)*
+    *   `Claim —(is_supported_by)→ Argument (exactly 1)` *(the parent Claim)*
 
 **Special constraints**
 
 *   **Immediate support is 1:1:** An **Argument** supports **exactly one** parent **Claim**.
-*   Sufficiency of support (how much evidence/sub‑claiming is “enough”) is a modelling decision expressed in the **Justification** (no minimum mandatory by the ontology).
+*   Sufficiency of support (how much evidence/sub‑claiming is “enough”) is a modelling decision expressed in the **Justification**.
 
 ***
 
@@ -236,7 +239,3 @@ layout: default
     *   That `Argument` has **exactly one** parent `Claim`.
 *   **For hierarchical decomposition:**
     *   Each `Argument` may introduce **0..N** sub‑Claims; each sub‑Claim then follows the same invariant (unique supporting Argument unless self‑evident).
-
-***
-
-*End of ontology.*
